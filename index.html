@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Music Player 
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="top-bar">
+                <i class="material-icons">arrow_drop_down</i>
+                <span>Now Playing</span>
+                <i class="material-icons">more_horiz</i>
+            </div>
+       
+            <div class="img-area">
+                <img src="" alt="No image found">
+            </div>
+            <div class="song-details">
+                <p class="name"></p>
+                <marquee><p class="artist"></p></marquee><br>
+
+            </div>
+
+            <div class="progress-area">
+                <input type="range" id="progress-slider" class="progress-slider" value="0" min="0" max="100" step="1">
+                <div class="timer">
+                    <span class="current">0:00</span>
+                    <span class="duration"></span>
+                </div>
+                <audio id="main-audio" src=""></audio>
+            </div>
+            
+            
+            <div class="controls">
+                <button i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i></button>
+                <button i id="prev" class="material-icons">skip_previous</i></button>
+                <div class="play-pause-border">
+                    <div class="play-pause">
+                        <button i class="material-icons">pause</i></button>
+                    </div>
+                </div>
+                <button i id="next" class="material-icons">skip_next</i></button>
+                <button i id="more-music" class="material-icons">queue_music</i></button>
+            </div>    
+         </div> 
+         <script src="script.js"></script>
+         <script src="music.js"></script>
+         
+
+    </body>   
+</html>
